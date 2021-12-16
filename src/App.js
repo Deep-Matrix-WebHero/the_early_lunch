@@ -5,6 +5,7 @@ import NotFound from "./Components/NotFound/NotFound";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import Home from "./Components/Home/Home";
+import MealDetail from "./Components/MealDetail/MealDetail";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
         </Route>
         <Route path="/restaurant">
           <Restaurant></Restaurant>
+        </Route>
+        <Route path={`/meal/:idMeal`}>
+          <MealDetail></MealDetail>
         </Route>
         <Route exact path="/">
           <Home></Home>
